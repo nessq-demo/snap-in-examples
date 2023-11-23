@@ -14,7 +14,7 @@ async function handleEvent(
     token: devrevPAT,
   })
   const workCreated = event.payload.work_created.work;
-  const bodyComment = 'Hello World is printed on the work ' + workCreated.display_id + ' from the automation.';
+  const bodyComment = 'QualityKiosk ' + workCreated.display_id + ' created first Snap-in.';
   const body = {
     object: workCreated.id,
     type: 'timeline_comment',
